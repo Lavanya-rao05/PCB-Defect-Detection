@@ -1,0 +1,4 @@
+train: data/images/train
+val: data/images/val
+nc: 5
+names: ['mouse_bite', 'open', 'short', 'spur', 'missing_hole']
