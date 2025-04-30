@@ -90,7 +90,10 @@
             filter: brightness(0.5);
         }
     </style>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 </head>
+
+
 
 <body>
     <!-- Navigation -->
@@ -186,14 +189,18 @@
                 </div>
             </div>
 
+            <div class="col-lg-4">
+                <div id="Box" class="text-center">
+                    <h3>Analysis Charts</h3>
+                    <img src="/static/processed/analysis_chart.jpg" alt="Analysis Graph">
+                </div>
+            </div>
         </div>
     </div>
 
     <video autoplay muted loop playsinline id="bg-video">
         <source src="{{ url_for('static', filename='assets/Animation1.mp4') }}" type="video/mp4">
     </video>
-
-
 
 
 
@@ -207,7 +214,13 @@
     <!-- Core theme JS-->
     <script src="http://127.0.0.1:5000/static/js/scripts.js"></script>
 
-
+   
+    <df-messenger
+      intent="WELCOME"
+      chat-title="PCB_Assistant"
+      agent-id="e552ef1e-2f9a-4974-a790-321c03856120"
+      language-code="en"
+    ></df-messenger>
 </body>
 
 </html>

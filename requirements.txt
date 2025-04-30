@@ -14,6 +14,8 @@ tqdm>=4.64.0
 ultralytics>=8.0.147
 pandas>=1.1.4
 seaborn>=0.11.0
+Flask
+
 
 # Export ----------------------------------------------------------------------
 # coremltools>=6.0  # CoreML export
